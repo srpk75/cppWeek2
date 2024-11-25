@@ -33,5 +33,5 @@ public:
 private:
 	bool _isActive = true;
 	int _id;
-	std::string _os;
+	DeviceType _os;
 };

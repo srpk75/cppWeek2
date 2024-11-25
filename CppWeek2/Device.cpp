@@ -21,3 +21,13 @@ void Device::deactivate()
 {
 	this->_isActive = false;
 }
+
+unsigned int Device::getID()
+{
+	return this->_id;
+}
+
+DeviceType Device::getType()
+{
+	return this->_os;
+}

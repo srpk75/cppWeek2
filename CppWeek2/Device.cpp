@@ -11,3 +11,13 @@ bool Device::isActive() const
 {
 	return this->_isActive;
 }
+
+void Device::activate()
+{
+	this->_isActive = true;
+}
+
+void Device::deactivate()
+{
+	this->_isActive = false;
+}

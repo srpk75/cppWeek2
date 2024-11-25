@@ -27,9 +27,11 @@ public:
 	bool isActive() const;
 	void activate();
 	void deactivate();
+	unsigned int getID();
+	DeviceType getType();
 
 private:
 	bool _isActive = true;
-	std::string _ip;
+	int _id;
 	std::string _os;
 };

@@ -23,15 +23,16 @@ enum DeviceType { PHONE, PC, LAPTOP, TABLET };		     //
 class Device
 {
 public:
-	std::string getOS();
+	std::string getOS() const;
 	bool isActive() const;
 	void activate();
 	void deactivate();
-	unsigned int getID();
-	DeviceType getType();
+	unsigned int getID() const;
+	DeviceType getType() const;
+	void init(const unsigned int id, const DeviceType type, const std::string os);
 
 private:
-	bool _isActive = true;
+	bool _isActive;
 	int _id;
 	std::string _os;
 	DeviceType _type;

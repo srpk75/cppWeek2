@@ -29,5 +29,5 @@ unsigned int Device::getID()
 
 DeviceType Device::getType()
 {
-	return this->_os;
+	return this->_type;
 }

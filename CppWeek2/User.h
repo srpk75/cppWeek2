@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "Device.h"
+#include "DeviceList.h"
 
 class User
 {
@@ -10,10 +10,11 @@ public:
 	unsigned int getID() const;
 	std::string getUserName() const;
 	unsigned int getAge() const;
+	DevicesList& getDevices() const;
 
 private:
 	int _id;
 	std::string _username;
 	int _age;
-	Device _device;
+	DevicesList _devices;
 };

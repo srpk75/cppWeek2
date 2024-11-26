@@ -29,7 +29,7 @@ unsigned int User::getAge() const
 	return this->_age;
 }
 
-DevicesList& User::getDevices() const
+const DevicesList& User::getDevices() const
 {
 	return this->_devices;
 }

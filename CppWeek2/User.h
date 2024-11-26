@@ -10,7 +10,7 @@ public:
 	unsigned int getID() const;
 	std::string getUserName() const;
 	unsigned int getAge() const;
-	DevicesList& getDevices() const;
+	const DevicesList& getDevices() const;
 
 private:
 	int _id;

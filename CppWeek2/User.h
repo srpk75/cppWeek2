@@ -12,7 +12,7 @@ public:
 	unsigned int getAge() const;
 	const DevicesList& getDevices() const;
 	void addDevice(const Device newDevice);
-	bool checkIfDevicesAreOn() const; /*really goofy function name*/
+	bool checkIfDevicesAreOn() const;
 
 private:
 	int _id;

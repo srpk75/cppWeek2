@@ -12,6 +12,10 @@ public:
 	void setStatus(const std::string new_status);
 	void addPostToProfilePage(const std::string post);
 	void addFriend(const User friend_to_add);
+	//
+	std::string getPage() const;
+	std::string getFriends() const;
+	std::string getFriendsWithSameLength() const;
 
 private:
 	User _owner;

@@ -13,7 +13,7 @@ void User::init(const unsigned int id, const std::string username, const unsigne
 
 void User::clear()
 {
-	//currently nothing to clear
+	this->_devices.clear();
 }
 
 unsigned int User::getID() const

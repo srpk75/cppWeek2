@@ -14,8 +14,7 @@ void Profile::init(User owner)
 void Profile::clear()
 {
 	this->_friendList.clear();
-	this->_owner.clear();
-	this->_page.clearPage();
+	//this->_owner.clear();
 }
 
 User Profile::getOwner() const

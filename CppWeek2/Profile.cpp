@@ -57,12 +57,17 @@ std::string Profile::getFriends() const
 	while (curr->get_next() != nullptr) // advance to the last element
 	{
 		returnString.append(curr->get_data().getUserName());
-		returnString.append(", ");
+		if (curr->get_next() != nullptr)
+		{
+			returnString.append(",");
+		}
 		curr = curr->get_next();
 	}
+	returnString.append(curr->get_data().getUserName());
+	return returnString;
 }
 
-std::string Profile::getFriendsWithSameLength() const
+std::string Profile::getFriendsWithSameNameLength() const
 {
 	std::string returnString = "";
 	std::string currName = "";
@@ -75,9 +80,13 @@ std::string Profile::getFriendsWithSameLength() const
 		currName = curr->get_data().getUserName();
 		if (currName.length() == length)
 		{
+			if (curr->get_next() != nullptr && returnString != "")
+			{
+				returnString.append(",");
+			}
 			returnString.append(currName);
-			returnString.append(", ");
 		}
 		curr = curr->get_next();
 	}
+	return returnString;
 }

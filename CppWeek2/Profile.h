@@ -15,7 +15,7 @@ public:
 	//
 	std::string getPage() const;
 	std::string getFriends() const;
-	std::string getFriendsWithSameLength() const;
+	std::string getFriendsWithSameNameLength() const;
 
 private:
 	User _owner;

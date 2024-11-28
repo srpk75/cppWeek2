@@ -11,7 +11,7 @@ public:
 	std::string getNetworkName() const;
 	int getMinAge() const;
 	bool addProfile(const Profile profile_to_add);
-	std::string getWindowDevices() const;
+	std::string getWindowsDevices() const;
 
 private:
 	int _minAge;
